@@ -14,6 +14,11 @@
   * Simple example of neural network with numpy 
   * data downloaded from task_1: https://neuroinflab.wordpress.com/tasks/
   
+# Tensorboard
+To run Tensorboard go to project location in console and type:
+
+```tensorboard --logdir=tensorboard/```
+  
 # Companion materials:
 
 Initial presentation: 
