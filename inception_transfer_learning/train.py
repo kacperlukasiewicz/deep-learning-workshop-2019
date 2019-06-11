@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from inception_transfer_learning.utils.inception_properties import Props
 from inception_transfer_learning.utils.model import Model
 from inception_transfer_learning.utils.utils import get_model_info, add_jpeg_decoding, create_model_graph
-from mouse_conv_keras import load_dataset
+from mnist_training.mouse_conv_keras import load_dataset
 
 CLASS_NUMBER = 3
 

@@ -36,20 +36,20 @@ def load_dataset():
 
 
 def create_dataset():
-    mouse_on_right = rgb2gray(plt.imread("mouse_images/img001.jpeg"))
-    mouse_on_left = rgb2gray(plt.imread("mouse_images/img010.jpeg"))
+    mouse_on_right = rgb2gray(plt.imread("mouse_dataset/img001.jpeg"))
+    mouse_on_left = rgb2gray(plt.imread("mouse_dataset/img010.jpeg"))
 
     left_cage_empty = mouse_on_right[60:530, 60:380]
     right_cage_empty = mouse_on_left[60:530, 380:680]
     empty_cage = np.concatenate((left_cage_empty, right_cage_empty), axis=1)
 
-    files = [filename for filename in os.listdir('mouse_images/') if filename.endswith('.jpeg')]
+    files = [filename for filename in os.listdir('mouse_dataset/') if filename.endswith('.jpeg')]
 
     x = []
     y = []
     for f in files:
         print(f)
-        img = cv2.imread('mouse_images/%s' % f)
+        img = cv2.imread('mouse_dataset/%s' % f)
 
         img = rgb2gray(img)
         img = img[60:530, 60:680]

@@ -44,3 +44,17 @@ Colab examples of Deep Neural Networks:
 
 Markdown cheatsheet:
 * https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+# Datasets
+
+Kaggle datasets search:
+* https://www.kaggle.com/datasets
+
+Malaria infected/uninfected cell images:
+* https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria
+
+Blood cell images:
+* https://www.kaggle.com/paultimothymooney/blood-cells
+
+Circadian Rhythm in the Brain
+* https://www.kaggle.com/kmader/circadian-rhythm-in-the-brain
