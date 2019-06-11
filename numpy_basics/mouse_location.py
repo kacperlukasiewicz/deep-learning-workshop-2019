@@ -25,7 +25,10 @@ left_cage_empty = mouse_on_right[60:530, 60:380]
 right_cage_empty = mouse_on_left[60:530, 380:680]
 empty_cage = np.concatenate((left_cage_empty, right_cage_empty), axis=1)
 
-files = [file for file in os.listdir('images/') if file.endswith('.jpeg')]
+files = []
+for file in os.listdir('images/'):
+    if file.endswith('.jpeg'):
+        files.append(file)
 
 for f in files:
     img = plt.imread('images/%s' % f)
